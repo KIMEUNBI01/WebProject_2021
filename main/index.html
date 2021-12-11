@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Go To The World!</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <header id="header"> <!-- header_menu -->
+        <div class="container">
+                <div class="header">
+                    <div class="header_tit">
+                        <h1>Go To The World!</h1><br>
+                    </div>
+                    <!-- //header_tit -->
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <main>  
+        <section id="contents">
+            <div class="container">
+                <section id="cont_left"> <!-- 왼쪽 메뉴 바 -->
+                    <article class="column col1" ><a href="../Caution/caution.html"><h4 >주의 사항</h4></article>
+                    <article class="column col2"><a href="../Able/able.html"><h4>해외 여행 가능 국가</h4></article>
+                    <article class="column col3"<a href="../Enable/enable.html"><h4>해외 여행 불가능 국가</h4></article>
+                </section> <!-- //왼쪽 메뉴 바 -->
+                <section id="cont_center"> <!-- 중앙 사진 -->
+                    <a href="https://www.0404.go.kr/m/dev/main.do" >
+                    <article class="column.col4"><img src="main.png"></article></a>
+                </section> <!-- //중앙 사진 -->
+            </div>
+        </section>
+        <!-- //contents -->
+    </main>  
+
+    <footer id="footer">
+        <div class="container">
+            <h2>반응형 웹사이트 푸터</h2>
+        </div>
+    </footer>
+    <!-- //footer -->
+    
+</body>
+<script> // 반응형 사진
+    var img = document.getElementsByTagName("img");
+    vat i=0;
+    while (i < img.length) {
+    img[i].setAttribute("style", "max-width: 100%; height: auto;");
+    i++;
+    }
+</script>
+</html>

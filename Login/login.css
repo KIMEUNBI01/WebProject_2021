@@ -1,0 +1,78 @@
+@import url('https://fonts.google.com/noto/specimen/Noto+Sans+KR');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+html {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+input{
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wrapper {
+    padding: 5px;
+}
+
+div {
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.title {
+    height: 150px;
+	text-align: center;
+	line-height: 200px;
+	letter-spacing: 0.2em;
+	font-family: 'Noto Sans KR', serif;
+	font-size: 25px;
+	color: #f8a501;
+	font-weight: 600;
+}
+
+.p{
+    font-size: 15px;
+	text-align: left;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.id input {
+    width: 100%;
+}
+
+.password input {
+    width: 100%;
+}
+
+
+.login button {
+    width: 100%;
+    cursor:pointer;
+}
+
+button{
+    cursor: pointer;
+    height: 30px;
+}
+
+.error{
+    font-size: 1px;
+    height: 20px;
+    color:red;
+    font-weight: 700;
+}

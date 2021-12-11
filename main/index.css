@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans KR" rel="stylesheet');
+
+/* reset */
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0;padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #2698cb;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {font-family: 'Noto Sans KR', sans-serif; color: #222; font-size: 13px; line-height: 1.6;}
+
+/* 폰트 스타일 초기화 */
+em,address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+ul,li,ol {list-style: none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+
+/* style */
+/* 레이아웃 */
+#header {  }
+#nav {background-color: #f6fdff;}
+#title {background-color: #eaf7fd;}
+#contents .container {border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
+#cont_left {float: left; width: 250px;}
+#cont_center {
+    overflow: hidden; 
+    min-height: 1300px; 
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+#footer {border-top: 1px solid #dbdbdb;}
+
+/* 컨테이너 */
+.container {position: relative; width: 1200px; margin: 0 auto; }
+
+/* 헤더 */
+.header {height: 60px; background-color: #888;}
+
+.header .header_tit{ 
+    text-align: center; 
+    text-transform: uppercase; 
+    margin-top: 55px; 
+    font-family: 'Noto Sans KR', sans-serif;}
+
+.header .header_tit h1 {
+    font-size: 30px; 
+    color: #000000; 
+    display: inline-block; 
+    padding: 5px 30px 5px 30px; 
+    letter-spacing: 2px; 
+    font-weight: 900;
+}
+
+/* 컨텐츠 영역 */
+.column {border-bottom: 1px solid #dbdbdb; font-family: 'Noto Sans KR', sans-serif ;}
+.column.col1 {padding: 15px; } 
+.column.col2 {padding: 15px;} 
+.column.col3 {padding: 15px; border-bottom: 0;} 
+.column.col4 {border-bottom: 0;} 
+
+/* mediaquery */
+/* 화면 너비 0~1220px */
+@media (max-width: 1220px){
+    .container {width: 95%; padding: 30px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1350px;}
+    #contents .container {border: 0;}
+    .header .header_tit {background-color: #f00;}
+
+}
+
+/* 화면 너비 0~1024px */
+@media (max-width: 1024px){
+    .container {width: 90%; padding: 30px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1350px;}
+    #contents .container {border: 0;}
+    .header .header_tit {background-color: #f00;
+    }
+}
+
+/* 화면 너비 0~960px */
+@media (max-width: 960px){
+    .container {width: 80%; padding: 30px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1000px;}
+    #contents .container {border: 0;}
+    .header .header_tit {background-color: #0067a3;}
+}
+
+/* 화면 너비 0~960px */
+@media (max-width: 800px){
+    .container {width: 80%; padding: 55px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1000px;}
+    #contents .container {border: 0;}
+    .header .header_tit {background-color: #0067a3;}
+}
+
+/* 화면 너비 0~768px */
+@media (max-width: 800px){
+    .container {width: 80%;}
+    .row {padding: 0 1px;}
+    #cont_center {width: 50%;}
+    #contents .container {border: 0;}
+    .header {height: auto;}
+    .header .header_tit {display: none;}
+
+}
+
+/* 화면 너비 0~600px */
+@media (max-width: 600px){
+    .container {width: 80%;}
+    #cont_center {border-top: 1px solid #dbdbdb;}
+    .header {height: auto;}
+    .header .header_tit {display: none;}
+}
+
+/* 화면 너비 0~480px */
+@media (max-width: 480px){
+    .container {width: 80%;}
+    #cont_center {border-top: 1px solid #dbdbdb;}
+}
+
+/* 화면 너비 0~320px */
+@media (max-width: 320px){
+    .container {width: 80%;}
+    #cont_center {border-top: 1px solid #dbdbdb;}
+
+}
+
+/* 반응형 사진 */
+img
+{
+  max-width: 100%;
+  height: auto;
+}

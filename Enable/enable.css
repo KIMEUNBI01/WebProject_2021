@@ -1,0 +1,127 @@
+/* reset */
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0;padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #2698cb;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {font-family: 'Noto Sans KR', sans-serif; color: #222; font-size: 13px; line-height: 1.6;}
+
+/* 폰트 스타일 초기화 */
+em,address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+ul,li,ol {list-style: none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+
+/* style */
+/* 레이아웃 */
+#header {  }
+#contents .container {border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
+#cont_left {float: left; width: 250px;}
+#cont_center {
+    overflow: hidden; 
+    min-height: 1250px; 
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+#cont_right {position: absolute; right: 0; top: 0px; width: 250px;}
+#footer {border-top: 1px solid #dbdbdb;}
+
+/* 컨테이너 */
+.container {position: relative; width: 1200px; margin: 0 auto; /* background: rgba(0,0,0,0.3) */}
+
+/* 헤더 */
+.header {height: 60px; background-color: #888;}
+.header .header_menu {text-align: center;}
+.header .header_menu a {font-size: 25px;  color: #000; padding: 8px 0 6px 10px; display: inline-block; transition: color 0.3s ease; font-family: 'Noto Sans KR', sans-serif; }
+
+/* 안내문구 */
+#t {text-align: center; font-size: 20px;}
+
+/* mediaquery */
+/* 화면 너비 0~1220px */
+@media (max-width: 1220px){
+    .container {width: 95%; padding: 30px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1350px;}
+    #contents .container {border: 0;}
+    .header .header_menu {background-color: #f00;}
+
+}
+
+/* 화면 너비 0~1024px */
+@media (max-width: 1024px){
+    .container {width: 90%; padding: 30px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1350px;}
+    #contents .container {border: 0;}
+    .header .header_menu {background-color: #f00;}
+    
+}
+
+/* 화면 너비 0~960px */
+@media (max-width: 960px){
+    .container {width: 80%; padding: 30px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1000px;}
+    #contents .container {border: 0;}
+    .header .header_menu {background-color: #0067a3;}
+}
+
+/* 화면 너비 0~960px */
+@media (max-width: 800px){
+    .container {width: 80%; padding: 55px;}
+    .row {padding: 0 1px;}
+    #cont_center {min-height: 1000px;}
+    #contents .container {border: 0;}
+    .header .header_menu {background-color: #0067a3;}
+}
+
+/* 화면 너비 0~768px */
+@media (max-width: 800px){
+    .container {width: 80%;}
+    .row {padding: 0 1px;}
+    #cont_center {border-top: 1px solid #dbdbdb;}
+    #contents .container {border: 0;}
+    .header {height: auto;}
+    .header .header_tit {display: none;}
+    .header .header_menu {display: none;}
+}
+
+/* 화면 너비 0~600px */
+@media (max-width: 600px){
+    .container {width: 80%;}
+    #cont_center {border-top: 1px solid #dbdbdb;}
+    .header {height: auto;}
+    .header .header_tit {display: none;}
+    .header .header_menu {display: none;}
+
+}
+
+/* 화면 너비 0~480px */
+@media (max-width: 480px){
+    .container {width: 80%;}
+    #cont_center {border-top: 1px solid #dbdbdb;}
+
+}
+
+/* 화면 너비 0~320px */
+@media (max-width: 320px){
+    .container {width: 80%;}
+    #cont_center {border-top: 1px solid #dbdbdb;}
+
+}
+
+.modal {float:left; padding: 8px;}
+.national {text-align: center;}
+
+/* 모달 */
+html,body {height:100%; margin:0; width:100%;}
+.mw {position:fixed;_position:absolute;top:0;left:0;width:100%;height:100%;display:none;}
+.mw .bg {position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50)}
+.mw .fg {position:absolute;top:30%;left:50%;width:360px;height:auto;margin:-100px 0 0 -200px;padding:20px;border:3px solid #ccc;background:#fff;}
